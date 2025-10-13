@@ -1,0 +1,277 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Tx Shield – Regulated Privacy Layer</title>
+  <meta name="description" content="Tx Shield: FAST SMPC protocol enabling private & auditable stablecoin/RWA transactions with institutional performance.">
+  <script src="https://cdn.tailwindcss.com"></script>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&display=swap" rel="stylesheet">
+  <style>
+    html { scroll-behavior: smooth; }
+    body { font-family: Inter, ui-sans-serif, system-ui, -apple-system, Segoe UI, Roboto, Noto Sans, Ubuntu, Cantarell, Helvetica Neue, Arial, "Apple Color Emoji", "Segoe UI Emoji"; }
+    .card { transition: transform .25s ease, box-shadow .25s ease; }
+    .card:hover { transform: translateY(-2px); box-shadow: 0 10px 30px rgba(0,0,0,.08); }
+  </style>
+</head>
+<body class="bg-slate-50 text-slate-900">
+  <!-- Nav -->
+  <header class="sticky top-0 z-50 backdrop-blur bg-white/70 border-b border-slate-200">
+    <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+      <div class="flex h-16 items-center justify-between">
+        <a href="#" class="flex items-center gap-2">
+          <div class="h-8 w-8 rounded-xl bg-gradient-to-br from-indigo-500 via-sky-500 to-cyan-400"></div>
+          <span class="font-extrabold tracking-tight">Tx&nbsp;Shield</span>
+        </a>
+        <nav class="hidden md:flex items-center gap-8 text-sm font-medium">
+          <a href="#features" class="hover:text-slate-700">Features</a>
+          <a href="#architecture" class="hover:text-slate-700">Architecture</a>
+          <a href="#usecases" class="hover:text-slate-700">Use Cases</a>
+          <a href="#requestdemo" class="hover:text-slate-700">Request Demo</a>
+          <a href="#contact" class="hover:text-slate-700">Contact</a>
+        </nav>
+        <a href="#contact" class="hidden sm:inline-flex items-center rounded-xl bg-slate-900 text-white px-4 py-2 text-sm font-semibold shadow-sm hover:bg-slate-800">Get in touch</a>
+      </div>
+    </div>
+  </header>
+
+  <!-- Hero -->
+  <section class="relative overflow-hidden">
+    <div class="absolute inset-0 -z-10 bg-gradient-to-b from-slate-100 via-white to-slate-50"></div>
+    <div class="max-w-7xl mx-auto px-6 lg:px-8 pt-16 pb-20">
+      <div class="grid lg:grid-cols-2 gap-10 items-center">
+        <div>
+          <span class="inline-flex items-center rounded-full px-3 py-1 text-xs font-medium ring-1 ring-inset ring-slate-200 bg-white text-slate-600">Regulated Privacy Layer</span>
+          <h1 class="mt-4 text-4xl sm:text-5xl font-extrabold tracking-tight">Private & Auditable Stablecoin Transactions</h1>
+          <p class="mt-5 text-lg text-slate-600 leading-7">Built on a FAST SMPC protocol, Tx Shield keeps transfers confidential for sender & receiver, while enabling selective audit access for regulators. Designed for institutional scale on L1/L2.</p>
+          <div class="mt-8 flex flex-wrap items-center gap-3">
+            <a href="#features" class="inline-flex items-center rounded-xl bg-slate-900 text-white px-5 py-3 font-semibold shadow hover:bg-slate-800">Explore the solution</a>
+            <a href="#requestdemo" class="inline-flex items-center rounded-xl bg-white ring-1 ring-slate-200 text-slate-900 px-5 py-3 font-semibold shadow hover:bg-slate-50">Request demo</a>
+            <span class="text-sm text-slate-500">Up to <strong>10,000 TPS</strong> • NxN parties • L1/L2 ready</span>
+          </div>
+        </div>
+        <div class="relative">
+          <!-- Simple visual: layered privacy card -->
+          <div class="mx-auto max-w-md">
+            <div class="rounded-2xl border border-slate-200 bg-white p-6 shadow-sm">
+              <div class="text-sm text-slate-500">Example flow</div>
+              <div class="mt-4 space-y-3">
+                <div class="p-4 rounded-xl bg-slate-50 border border-slate-200 flex items-center justify-between">
+                  <div>
+                    <div class="text-xs text-slate-500">Input A (private)</div>
+                    <div class="font-semibold">Sender: Wallet A</div>
+                  </div>
+                  <div class="text-xs text-slate-500">encrypted</div>
+                </div>
+                <div class="p-4 rounded-xl bg-slate-50 border border-slate-200 flex items-center justify-between">
+                  <div>
+                    <div class="text-xs text-slate-500">Input B (private)</div>
+                    <div class="font-semibold">Receiver: Wallet B</div>
+                  </div>
+                  <div class="text-xs text-slate-500">encrypted</div>
+                </div>
+                <div class="p-4 rounded-xl bg-indigo-600 text-white font-semibold text-center">FAST SMPC Engine</div>
+                <div class="p-4 rounded-xl bg-emerald-50 border border-emerald-200 text-emerald-800 flex items-center justify-between">
+                  <div>
+                    <div class="text-xs">Output (public)</div>
+                    <div class="font-semibold">Finalized TX on chain</div>
+                  </div>
+                  <div class="text-xs">auditable if granted</div>
+                </div>
+              </div>
+            </div>
+            <p class="mt-3 text-center text-xs text-slate-500">Privacy by default • Audit by permission</p>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Features -->
+  <section id="features" class="py-16">
+    <div class="max-w-7xl mx-auto px-6 lg:px-8">
+      <div class="max-w-2xl">
+        <h2 class="text-3xl font-extrabold tracking-tight">Key Highlights</h2>
+        <p class="mt-3 text-slate-600">Tx Shield balances privacy, performance, and compliance for real-world financial operations.</p>
+      </div>
+      <div class="mt-10 grid sm:grid-cols-2 lg:grid-cols-3 gap-6">
+        <!-- Card 1 -->
+        <div class="card rounded-2xl border border-slate-200 bg-white p-6">
+          <div class="h-10 w-10 rounded-xl bg-slate-900/90 mb-4"></div>
+          <h3 class="font-semibold text-lg">Private Transactions</h3>
+          <p class="mt-2 text-sm text-slate-600">End-to-end confidentiality between sender & receiver with metadata minimization.</p>
+        </div>
+        <!-- Card 2 -->
+        <div class="card rounded-2xl border border-slate-200 bg-white p-6">
+          <div class="h-10 w-10 rounded-xl bg-indigo-600/90 mb-4"></div>
+          <h3 class="font-semibold text-lg">Regulatory Auditability</h3>
+          <p class="mt-2 text-sm text-slate-600">Selective disclosure via multi-key shards for recognized auditors and regulators.</p>
+        </div>
+        <!-- Card 3 -->
+        <div class="card rounded-2xl border border-slate-200 bg-white p-6">
+          <div class="h-10 w-10 rounded-xl bg-cyan-500/90 mb-4"></div>
+          <h3 class="font-semibold text-lg">FAST MPC Protocol</h3>
+          <p class="mt-2 text-sm text-slate-600">Parallelized secret sharing & batch aggregation enable up to 10,000 TPS.</p>
+        </div>
+        <!-- Card 4 -->
+        <div class="card rounded-2xl border border-slate-200 bg-white p-6">
+          <div class="h-10 w-10 rounded-xl bg-emerald-500/90 mb-4"></div>
+          <h3 class="font-semibold text-lg">User Metadata Protection</h3>
+          <p class="mt-2 text-sm text-slate-600">Identity and history remain encrypted yet computable for compliance analytics.</p>
+        </div>
+        <!-- Card 5 -->
+        <div class="card rounded-2xl border border-slate-200 bg-white p-6">
+          <div class="h-10 w-10 rounded-xl bg-fuchsia-500/90 mb-4"></div>
+          <h3 class="font-semibold text-lg">NxN Multi-Party</h3>
+          <p class="mt-2 text-sm text-slate-600">Supports complex institutional flows, consortia and programmable policies.</p>
+        </div>
+        <!-- Card 6 -->
+        <div class="card rounded-2xl border border-slate-200 bg-white p-6">
+          <div class="h-10 w-10 rounded-xl bg-amber-500/90 mb-4"></div>
+          <h3 class="font-semibold text-lg">L1/L2 Ready</h3>
+          <p class="mt-2 text-sm text-slate-600">Modular deployment with clean interfaces to EVM and non-EVM stacks.</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Architecture -->
+  <section id="architecture" class="py-16 bg-white">
+    <div class="max-w-7xl mx-auto px-6 lg:px-8">
+      <div class="max-w-3xl">
+        <h2 class="text-3xl font-extrabold tracking-tight">Architecture</h2>
+        <p class="mt-3 text-slate-600">Four-layer design aligning business logic with cryptographic guarantees and infrastructure control.</p>
+      </div>
+
+      <!-- Diagram -->
+      <div class="mt-10 rounded-2xl border border-slate-200 bg-slate-50 p-6">
+        <svg viewBox="0 0 900 470" class="w-full h-auto">
+          <!-- App Layer -->
+          <rect x="30" y="30" width="840" height="80" rx="14" class="fill-white stroke-slate-300" stroke-width="2"></rect>
+          <text x="50" y="75" font-size="18" font-weight="700" fill="#0f172a">Application Layer</text>
+          <text x="50" y="98" font-size="13" fill="#334155">Stablecoin transfer • Digital bonds • RWA payments • Institutional wallets</text>
+
+          <!-- Protocol Layer -->
+          <rect x="30" y="130" width="840" height="110" rx="14" class="fill-white stroke-slate-300" stroke-width="2"></rect>
+          <text x="50" y="175" font-size="18" font-weight="700" fill="#0f172a">MPC Protocol Layer (FAST SMPC)</text>
+          <text x="50" y="198" font-size="13" fill="#334155">NxN parties • Parallel secret sharing • Batch aggregation • Metadata protection • Audit gateway</text>
+
+          <!-- Crypto Primitives -->
+          <rect x="30" y="260" width="840" height="90" rx="14" class="fill-white stroke-slate-300" stroke-width="2"></rect>
+          <text x="50" y="300" font-size="18" font-weight="700" fill="#0f172a">Cryptographic Primitives</text>
+          <text x="50" y="323" font-size="13" fill="#334155">Secret Sharing • OT • HE (for specific ops) – balanced compute/comm</text>
+
+          <!-- Infra -->
+          <rect x="30" y="370" width="840" height="70" rx="14" class="fill-white stroke-slate-300" stroke-width="2"></rect>
+          <text x="50" y="410" font-size="18" font-weight="700" fill="#0f172a">Infrastructure</text>
+          <text x="50" y="433" font-size="13" fill="#334155">L1/L2 deployment • TLS channels • Regulator access controls</text>
+        </svg>
+        <p class="mt-3 text-xs text-slate-500">Illustrative only. Specific stacks and ciphers are configurable per deployment.</p>
+      </div>
+
+      <!-- Bullet list -->
+      <div class="mt-10 grid lg:grid-cols-3 gap-6">
+        <div class="card rounded-2xl border border-slate-200 bg-white p-6">
+          <h3 class="font-semibold">Private Auditable Transactions</h3>
+          <p class="mt-2 text-sm text-slate-600">Selective disclosure with multi-key shards; zero exposure by default.</p>
+        </div>
+        <div class="card rounded-2xl border border-slate-200 bg-white p-6">
+          <h3 class="font-semibold">User Metadata Protection</h3>
+          <p class="mt-2 text-sm text-slate-600">Computed insights for compliance while keeping identities encrypted.</p>
+        </div>
+        <div class="card rounded-2xl border border-slate-200 bg-white p-6">
+          <h3 class="font-semibold">Interoperable Deployment</h3>
+          <p class="mt-2 text-sm text-slate-600">Drop-in modules for chains, custodians, and institutional wallet stacks.</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Use cases -->
+  <section id="usecases" class="py-16">
+    <div class="max-w-7xl mx-auto px-6 lg:px-8">
+      <div class="max-w-3xl">
+        <h2 class="text-3xl font-extrabold tracking-tight">Industry Applications</h2>
+        <p class="mt-3 text-slate-600">Where Tx Shield fits in production.</p>
+      </div>
+
+      <div class="mt-10 grid md:grid-cols-2 lg:grid-cols-3 gap-6">
+        <div class="card rounded-2xl border border-slate-200 bg-white p-6">
+          <h3 class="font-semibold">Financial Compliance & Audit</h3>
+          <p class="mt-2 text-sm text-slate-600">Private transfers for banks and issuers with auditable trails for regulators. Cross-border settlement, on/off-ramp privacy, treasury payouts.</p>
+        </div>
+        <div class="card rounded-2xl border border-slate-200 bg-white p-6">
+          <h3 class="font-semibold">Data-Private Analytics</h3>
+          <p class="mt-2 text-sm text-slate-600">Aggregate insights across wallets without exposing identities or balances.</p>
+        </div>
+        <div class="card rounded-2xl border border-slate-200 bg-white p-6">
+          <h3 class="font-semibold">Digital Asset Custody & Treasury</h3>
+          <p class="mt-2 text-sm text-slate-600">MPC signing + privacy preserving settlement for stablecoins and tokenized RWAs.</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Request Demo CTA -->
+  <section id="requestdemo" class="py-20 bg-gradient-to-br from-slate-900 via-slate-800 to-slate-900 text-white">
+    <div class="max-w-5xl mx-auto px-6 lg:px-8 text-center">
+      <div class="rounded-3xl border border-white/10 bg-white/5 p-10 shadow-2xl">
+        <h2 class="text-3xl font-extrabold">Ready to Experience Tx Shield?</h2>
+        <p class="mt-4 text-white/80 text-lg">Schedule a 20-minute walkthrough with our team to see how private & auditable transactions can fit your workflow.</p>
+        <a href="#contact" class="mt-8 inline-flex items-center rounded-xl bg-white text-slate-900 px-6 py-3 font-semibold shadow hover:bg-slate-100">Request Demo →</a>
+      </div>
+    </div>
+  </section>
+
+  <!-- Contact -->
+  <section id="contact" class="py-16 bg-white">
+    <div class="max-w-7xl mx-auto px-6 lg:px-8">
+      <div class="rounded-2xl border border-slate-200 bg-gradient-to-br from-slate-900 to-slate-800 text-white p-8 lg:p-10">
+        <div class="grid lg:grid-cols-2 gap-8 items-center">
+          <div>
+            <h3 class="text-2xl font-extrabold">Collaborate with us</h3>
+            <p class="mt-3 text-white/80">Bring regulatory-grade privacy to your chain, wallet, or institutional product.</p>
+            <ul class="mt-4 space-y-1 text-sm text-white/70 list-disc list-inside">
+              <li>Integration support for L1/L2 & custodians</li>
+              <li>PoC timelines for compliance teams</li>
+              <li>Deployment & performance tuning</li>
+            </ul>
+          </div>
+          <form class="bg-white rounded-xl p-6 text-slate-900 space-y-4">
+            <div>
+              <label class="text-sm font-medium">Work Email</label>
+              <input type="email" placeholder="you@company.com" class="mt-1 w-full rounded-lg border border-slate-300 px-3 py-2 focus:outline-none focus:ring-2 focus:ring-indigo-500" required>
+            </div>
+            <div>
+              <label class="text-sm font-medium">Company</label>
+              <input type="text" placeholder="Company name" class="mt-1 w-full rounded-lg border border-slate-300 px-3 py-2 focus:outline-none focus:ring-2 focus:ring-indigo-500">
+            </div>
+            <div>
+              <label class="text-sm font-medium">What are you building?</label>
+              <textarea rows="3" placeholder="Tell us briefly about your use case" class="mt-1 w-full rounded-lg border border-slate-300 px-3 py-2 focus:outline-none focus:ring-2 focus:ring-indigo-500"></textarea>
+            </div>
+            <button type="submit" class="w-full rounded-lg bg-slate-900 text-white py-2.5 font-semibold hover:bg-slate-800">Request a call</button>
+            <p class="text-xs text-slate-500">By submitting, you agree to be contacted about Tx Shield.</p>
+          </form>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <footer class="py-10">
+    <div class="max-w-7xl mx-auto px-6 lg:px-8 text-sm text-slate-500 flex flex-col sm:flex-row items-center justify-between gap-4">
+      <div>© <span id="y"></span> State Labs • Tx Shield</div>
+      <div class="flex items-center gap-4">
+        <a href="#features" class="hover:text-slate-700">Features</a>
+        <a href="#architecture" class="hover:text-slate-700">Architecture</a>
+        <a href="#usecases" class="hover:text-slate-700">Use Cases</a>
+        <a href="#requestdemo" class="hover:text-slate-700">Request Demo</a>
+      </div>
+    </div>
+  </footer>
+
+  <script>document.getElementById('y').textContent = new Date().getFullYear()</script>
+</body>
+</html>
