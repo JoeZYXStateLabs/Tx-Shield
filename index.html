@@ -174,35 +174,56 @@
   </section>
 
   <!-- Use cases -->
-  <section id="usecases" class="py-16">
-    <div class="max-w-7xl mx-auto px-6 lg:px-8">
-      <div class="max-w-3xl">
-        <h2 class="text-3xl font-extrabold tracking-tight">Industry Applications</h2>
-        <p class="mt-3 text-slate-600">Where Tx Shield powers institutional privacy and compliance.</p>
+<section class="py-20 bg-slate-50">
+  <div class="max-w-6xl mx-auto text-center px-6">
+    <h2 class="text-3xl font-extrabold text-slate-900">Industry Applications</h2>
+    <p class="mt-3 text-lg text-slate-600">
+      Where Tx Shield powers institutional privacy and compliance.
+    </p>
+
+    <div class="mt-12 grid grid-cols-1 md:grid-cols-3 gap-8">
+      <!-- Payment Layer -->
+      <div class="bg-white p-6 rounded-2xl shadow-sm hover:shadow-md transition">
+        <h3 class="text-xl font-semibold text-slate-900">Payment Layer</h3>
+        <p class="mt-3 text-slate-600">
+          Combines Multi-Party Computation (MPC) with Web2 payment networks to enhance key
+          management, risk modeling, and transaction privacy. Tx-Shield enables distributed
+          authorization, privacy-preserving AML analytics, and fraud detection without exposing user data.
+        </p>
+        <a href="./payment/" class="inline-block mt-4 text-blue-600 hover:text-blue-800 font-medium">
+          Learn more →
+        </a>
       </div>
 
-      <div class="mt-10 grid md:grid-cols-2 lg:grid-cols-3 gap-6">
-        <div class="card rounded-2xl border border-slate-200 bg-white p-6 text-center">
-          <h3 class="font-semibold">Payment Layer</h3>
-          <p class="mt-2 text-sm text-slate-600"> Combines Multi-Party Computation (MPC) with Web2 payment networks to enhance key management,
-  risk modeling, and transaction privacy. Tx-Shield enables distributed authorization,
-  privacy-preserving AML analytics, and fraud detection without exposing user data.</p>
-        </div>
-        <div class="card rounded-2xl border border-slate-200 bg-white p-6 text-center">
-          <h3 class="font-semibold">Chain Integration</h3>
-          <p class="mt-2 text-sm text-slate-600">Deployable across L1 and L2 environments with NxN-party MPC architecture.
-  Tx-Shield ensures private yet auditable transactions, enabling scalable and compliant
-  privacy layers for stablecoins, RWA, and institutional DeFi ecosystems.</p>
-        </div>
-        <div class="card rounded-2xl border border-slate-200 bg-white p-6 text-center">
-          <h3 class="font-semibold">Darkpool Settlement</h3>
-          <p class="mt-2 text-sm text-slate-600">  Off-chain matching and MPC-based clearing layer where only counterparties
-  can view trades while regulators gain permissioned visibility.
-  Tx-Shield brings confidentiality, liquidity, and auditability together for institutional settlement.</p>
-        </div>
+      <!-- Chain Integration -->
+      <div class="bg-white p-6 rounded-2xl shadow-sm hover:shadow-md transition">
+        <h3 class="text-xl font-semibold text-slate-900">Chain Integration</h3>
+        <p class="mt-3 text-slate-600">
+          Deployable across L1 and L2 environments with NxN-party MPC architecture.
+          Tx-Shield ensures private yet auditable transactions, enabling scalable and compliant
+          privacy layers for stablecoins, RWA, and institutional DeFi ecosystems.
+        </p>
+        <a href="./chain/" class="inline-block mt-4 text-blue-600 hover:text-blue-800 font-medium">
+          Learn more →
+        </a>
+      </div>
+
+      <!-- Darkpool Settlement -->
+      <div class="bg-white p-6 rounded-2xl shadow-sm hover:shadow-md transition">
+        <h3 class="text-xl font-semibold text-slate-900">Darkpool Settlement</h3>
+        <p class="mt-3 text-slate-600">
+          Off-chain matching and MPC-based clearing layer where only counterparties can view trades
+          while regulators gain permissioned visibility. Tx-Shield brings confidentiality, liquidity,
+          and auditability together for institutional settlement.
+        </p>
+        <a href="./darkpool/" class="inline-block mt-4 text-blue-600 hover:text-blue-800 font-medium">
+          Learn more →
+        </a>
       </div>
     </div>
-  </section>
+  </div>
+</section>
+
 
   <!-- Request Demo CTA -->
   <section id="requestdemo" class="py-20 bg-gradient-to-br from-slate-900 via-slate-800 to-slate-900 text-white">
@@ -266,3 +287,4 @@
   <script>document.getElementById('y').textContent = new Date().getFullYear()</script>
 </body>
 </html>
+
