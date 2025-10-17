@@ -1,0 +1,94 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Payment Layer · Tx Shield</title>
+  <script src="https://cdn.tailwindcss.com"></script>
+</head>
+<body class="bg-slate-50 text-slate-900">
+  <header class="bg-white border-b">
+    <div class="max-w-6xl mx-auto px-6 py-4 flex items-center justify-between">
+      <a href="#" onclick="history.back(); return false;" class="text-slate-900 font-bold">← Back</a>
+      <nav class="text-sm text-slate-600 space-x-4">
+        <a href="#" onclick="history.back(); return false;" class="hover:text-slate-900">Home</a>
+        <a href="#contact" class="hover:text-slate-900">Contact</a>
+      </nav>
+    </div>
+  </header>
+
+  <main class="max-w-3xl mx-auto px-6 py-10 md:py-14">
+    <h1 class="text-3xl font-extrabold tracking-tight">Payment Layer</h1>
+    <p class="mt-3 text-slate-700 leading-7">
+      The integration of <strong>Multi‑Party Computation (MPC)</strong> with <strong>Web2 payment systems</strong>—including conventional card networks,
+      mobile payment gateways, and online clearing infrastructures—leverages MPC’s privacy protection and cryptographic security
+      to address long‑standing challenges in the traditional financial payment ecosystem.
+    </p>
+
+    <section class="mt-8 bg-white rounded-2xl border p-6">
+      <h2 class="text-xl font-semibold">1) Key Management & Anti‑Fraud (Security Enhancement)</h2>
+      <ul class="list-disc list-inside space-y-2 mt-3 text-slate-700 leading-7">
+        <li><strong>Credential and Key Protection:</strong> In conventional payment gateways or issuing institutions,
+        cryptographic keys—used for encrypting transactional data and validating signatures—are major attack targets.
+        MPC shards these critical keys across multiple isolated servers or hardware security modules (HSMs), ensuring
+        that even if one node is compromised, the full key cannot be reconstructed or used to forge transactions.</li>
+        <li><strong>Distributed Authorization:</strong> For enterprise treasury systems or high‑value transactions,
+        MPC enables threshold‑based multi‑authorization, offering stronger cryptographic security than 2FA or simple multisig.
+        Transactions are executed only when the quorum of authorized signers is reached.</li>
+      </ul>
+    </section>
+
+    <section class="mt-6 bg-white rounded-2xl border p-6">
+      <h2 class="text-xl font-semibold">2) Anti‑Money Laundering (AML) & Fraud Analytics (Privacy‑Preserving Computation)</h2>
+      <ul class="list-disc list-inside space-y-2 mt-3 text-slate-700 leading-7">
+        <li><strong>Collaborative Risk Analysis:</strong> Multiple financial institutions or payment service providers
+        can jointly analyze fraud or money‑laundering risks without disclosing sensitive customer data.
+        With MPC, each participant encrypts its data (e.g., transaction volumes, frequency, or patterns)
+        and jointly computes aggregated risk indicators in a cryptographically protected manner.</li>
+        <li><strong>Blacklist Matching:</strong> Institutions can securely compare internal customer lists with regulatory
+        or industry blacklists without revealing either dataset, enabling privacy‑compliant identification of suspicious entities.</li>
+      </ul>
+    </section>
+
+    <section class="mt-6 bg-white rounded-2xl border p-6">
+      <h2 class="text-xl font-semibold">3) Data Analytics & Credit Scoring (Collaborative Computation)</h2>
+      <ul class="list-disc list-inside space-y-2 mt-3 text-slate-700 leading-7">
+        <li><strong>Federated Credit Assessment:</strong> Different financial institutions can jointly evaluate credit risk
+        without exposing full customer information such as income, liabilities, or spending behavior.
+        Through MPC‑based joint computation, a unified credit score can be derived under encryption.</li>
+        <li><strong>Breaking Data Silos:</strong> Enables compliant cross‑institutional data collaboration while maintaining
+        confidentiality, improving credit modeling and financial inclusion.</li>
+      </ul>
+    </section>
+
+    <section class="mt-6 bg-white rounded-2xl border p-6">
+      <h2 class="text-xl font-semibold">Summary</h2>
+      <p class="text-slate-700 leading-7 mt-2">
+        The convergence of MPC and Web2 payment infrastructure functions as a foundational layer of
+        <strong>privacy‑enhancing technology (PET)</strong> and <strong>secure computation infrastructure</strong>.
+        It safeguards sensitive elements—such as cryptographic keys, transactional data, and identity records—while
+        enabling secure cross‑institutional collaboration. This integration strengthens trust, resilience,
+        and regulatory confidence across the traditional payment ecosystem.
+      </p>
+    </section>
+
+    <div class="mt-10 flex gap-3">
+      <a href="#contact" class="rounded-lg bg-slate-900 text-white px-4 py-2 font-semibold hover:bg-slate-800">Contact us</a>
+      <a href="#" onclick="history.back(); return false;" class="rounded-lg border border-slate-300 px-4 py-2 font-semibold hover:bg-slate-50">← Back to home</a>
+    </div>
+  </main>
+
+  <footer id="contact" class="py-12 border-t bg-white">
+    <div class="max-w-3xl mx-auto px-6 text-sm text-slate-600">
+      <p class="font-medium text-slate-900">Contact</p>
+      <div class="mt-2 flex flex-wrap gap-3">
+        <a href="mailto:joezyx@statelabs.ai" class="rounded-lg bg-slate-900 text-white px-3 py-1.5 font-semibold hover:bg-slate-800">Email us</a>
+        <a href="https://x.com/STL_AI" target="_blank" rel="noopener" class="rounded-lg border border-slate-300 px-3 py-1.5 font-semibold hover:bg-slate-50">X / Twitter</a>
+        <a href="https://www.linkedin.com/company/statelabs-ai" target="_blank" rel="noopener" class="rounded-lg border border-slate-300 px-3 py-1.5 font-semibold hover:bg-slate-50">LinkedIn</a>
+      </div>
+      <p class="mt-3 text-xs text-slate-500">Prefer email for security‑sensitive inquiries.</p>
+    </div>
+  </footer>
+</body>
+</html>
