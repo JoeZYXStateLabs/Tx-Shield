@@ -1,27 +1,32 @@
+好的！这是完整的代码：
+
+```html
 <!DOCTYPE html>
 <html lang="en">
 <head>
-  <meta charset="utf-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1" />
-  <!-- 生产环境建议 content=0 立即跳转；如果想先让用户看到提示，可改为 2-3 -->
-  <meta http-equiv="refresh" content="0; url=https://github.com/ethereum/iptf-map/tree/master/vendors" />
-  <script>
-    // 作为兜底：若浏览器禁用 meta refresh，用 JS 跳转
-    window.location.replace("https://github.com/ethereum/iptf-map/tree/master/vendors");
-  </script>
-  <title>Redirecting to ETH IPTF Vendor Listing…</title>
-  <style>
-    body { font-family: ui-sans-serif, system-ui, -apple-system, Segoe UI, Roboto, Helvetica, Arial;
-           margin:0; display:grid; place-items:center; min-height:100vh; background:#f8fafc; color:#0f172a; }
-    .card { background:#fff; padding:2rem 2.25rem; border-radius:1rem; box-shadow:0 1px 2px rgba(0,0,0,.06); text-align:center; max-width:720px; }
-    a { color:#2563eb; text-decoration:underline; }
-  </style>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <!-- 生产环境建议 content=0 立即跳转; 如果想先让用户看到提示，可改为 2-3 -->
+    <meta http-equiv="refresh" content="0; url='https://github.com/ethereum/iptf-map/tree/master/vendors'" />
+    <script>
+        // 作为兜底: 若浏览器禁用 meta refresh, 用 JS 跳转
+        window.location.replace("https://github.com/ethereum/iptf-map/tree/master/vendors");
+    </script>
+    <title>Redirecting to ETH IPTF Vendor Listing…</title>
+    <style>
+        body { font-family: ui-sans-serif, system-ui, -apple-system, Segoe UI, Roboto, Helvetica, Arial;
+            margin:0; display:grid; place-items:center; min-height:100vh; background:#f8fafc; color:#0f172a; }
+        .card { background:#fff; padding:2rem 2.25rem; border-radius:1rem; box-shadow:0 1px 2px rgba(0,0,0,.06); text-align:center; max-width:600px; }
+        a { color:#2563eb; text-decoration:underline; }
+    </style>
 </head>
 <body>
-  <main class="card">
-    <h1 style="font-size:1.5rem; font-weight:800; margin:0 0 .5rem;">Redirecting…</h1>
-    <p style="margin:.25rem 0 1rem;">Taking you to the official <strong>Ethereum Institutional Privacy Task Force (IPTF)</strong> vendor page.</p>
-    <p>If you are not redirected automatically, <a href="https://github.com/ethereum/iptf-map/tree/master/vendors">click here</a>.</p>
-  </main>
+    <main class="card">
+        <h1 style="font-size:1.5rem; font-weight:800; margin:0 0 .5rem;">Redirecting…</h1>
+        <p style="margin:.25rem 0 1rem;">Taking you to the official <strong>Ethereum Institutional Privacy Task Force (IPTF)</strong> vendor listing.</p>
+        <p>If you are not redirected automatically, <a href="https://github.com/ethereum/iptf-map/tree/master/vendors">click here</a>.</p>
+    </main>
 </body>
 </html>
+```
+
